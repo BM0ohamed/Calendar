@@ -63,67 +63,11 @@ function App() {
 
 
   return (
-    // <main id="principale">
-    //   {/* <section>
-    //     <h1>There are {offers.count} offers between {date[0]?.toDateString()} and {date[1]?.toDateString()}</h1>
-    //        */}
-          
-    //       {/* <button>Click dessus</button>
-    //       {/* <div id="displayOffers">{offers?.coach || 0}</div> }
-    //       <div id="displayOffers">{donnes?.coach}</div> */}
-
-
-
-    //   {/* <h1 className='text-center'>React Calendar with Range</h1>
-    //     <div className='calendar-container'>
-    //       <Calendar
-    //         onChange={onChange}
-    //         value={date}
-    //         selectRange={true}
-    //       />
-    //     </div>
-    //     {date.length > 0 ? (
-    //       <p className='text-center'>
-    //         <span className='bold'>Start:</span>{' '}
-    //         {date[0].toDateString()}
-    //         &nbsp;|&nbsp;
-    //         <span className='bold'>End:</span> {date[1].toDateString()}
-    //       </p>
-    //     ) : (
-    //       <p className='text-center'>
-    //         <span className='bold'>Default selected date:</span>{' '}
-    //         {date.toDateString()}
-    //       </p>
-    //     )}
-
-    //     {offers.count > 0 ? (
-    //     <p className='text-center'>
-    //         affiche frr
-    //     </p>
-    //     ) : (
-    //       <p className='text-center'>
-    //         offer.count est nul
-    //       </p>
-    //     )}
-    //   </section> */}
-
-    //   <section>
-    //   </section>
-    // </main>
-    //on rajoute un boutton pour passer à la semaine suivante
     <main>
       <Schedule 
         eventsUnOrdered={offers}
       />
     </main>
-
-// return <Event
-// key={`event-${eventKey}`}
-// startTime={event.startTime}
-// endTime={event.endTime} 
-// title={event.title}
-// eventNumber={eventKey + 1}
-// />
   );
 }
 
