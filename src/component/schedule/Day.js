@@ -12,7 +12,6 @@ export default function Day({ name, events }) {
                     startTime={event.startTime}
                     endTime={event.endTime} 
                     title={event.title}
-                    coach={event.coach}
                     place={event.place}
                     eventNumber={(eventKey + 1)%4 +1}
                 />
