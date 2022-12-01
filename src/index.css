@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+:root {
+  --cd-color-event-1: hsl(199, 25%, 46%);
+  --cd-color-event-1-h: 199;
+  --cd-color-event-1-s: 25%;
+  --cd-color-event-1-l: 46%;
+  --cd-color-event-2: hsl(271, 23%, 26%);
+  --cd-color-event-2-h: 271;
+  --cd-color-event-2-s: 23%;
+  --cd-color-event-2-l: 26%;
+  --cd-color-event-3: hsl(162, 14%, 68%);
+  --cd-color-event-3-h: 162;
+  --cd-color-event-3-s: 14%;
+  --cd-color-event-3-l: 68%;
+  --cd-color-event-4: hsl(31, 89%, 68%);
+  --cd-color-event-4-h: 31;
+  --cd-color-event-4-s: 89%;
+  --cd-color-event-4-l: 68%;
+  --cd-color-text: hsl(0, 0%, 13%);
+  --cd-color-text-h: 0;
+  --cd-color-text-s: 0%;
+  --cd-color-text-l: 13%;
+  --cd-color-border: hsl(0, 0%, 92%);
+  --cd-color-border-h: 0;
+  --cd-color-border-s: 0%;
+  --cd-color-border-l: 92%;
+  --font-primary: 'Source Sans Pro', sans-serif;
+  --schedule-rows-number: 19;
+  --schedule-rows-height: 50px
+}
