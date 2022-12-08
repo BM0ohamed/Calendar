@@ -70,7 +70,7 @@ function App() {
 
   return (
     <main>
-      <div> There is {offerNumber} offers between {dateDebut} and {dateFin}</div>
+      <div> There is {offerNumber} offers between {moment(dateDebut).format("LL")} and {moment(dateFin).format("LL")}</div>
       <button type="button" onClick={lastWeek} >Last week</button>
       <button type="button" onClick={nextWeek} >Next week</button>
       <Schedule 
