@@ -25,7 +25,7 @@ export default function Schedule( { eventsUnOrdered} ) {
         return Number(a.startTime.replace(":", "")) - Number(b.startTime.replace(":", ""))
     }
 
-    eventsUnOrdered.length > 0 && eventsUnOrdered.sort(sortByTime).map((event) => {
+    eventsUnOrdered.sort(sortByTime).map((event) => {
         const day = event.day
         const week = weeks.find(week => week.name === day)
         week.events = [...week.events, event]

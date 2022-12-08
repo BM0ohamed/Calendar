@@ -13,7 +13,7 @@ export default function Day({ name, events }) {
                     endTime={event.endTime} 
                     title={event.title}
                     place={event.place}
-                    eventNumber={(eventKey + 1)%4 +1}
+                    eventNumber={(eventKey)%4 +1}
                 />
             })}
         </ul>

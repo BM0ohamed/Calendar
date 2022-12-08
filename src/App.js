@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { getOffersForCompForXDay, getCoachName, getActivityName } from "./api/helper"
+import { getOffersForCompForXDay, getCoachName, getActivityName, getEstablishment } from "./api/helper"
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import './App.css';
@@ -27,9 +27,13 @@ function App() {
       const resultsAvailables = data?.results.filter(result => result.available)
 
       resultsAvailables.map(async (resultAvailable) => {
+        // console.log(resultAvailable.establishment)
         const dateStart = new Date(resultAvailable.date_start)
         const coachName = await getCoachName(resultAvailable.coach)
         const activityName = await getActivityName(resultAvailable.meta_activity)
+        // console.log(resultAvailable.establishment)
+        // const etablissement = await getEstablishment(resultAvailable.establishment)
+        // console.log(etablissement)
 
         const offerFormatted = {
           title: `activity : ${activityName}. The coach is ${coachName}`,
@@ -66,7 +70,7 @@ function App() {
 
   return (
     <main>
-      <div> There are {offerNumber} offers between {dateDebut} and {dateFin}</div>
+      <div> There is {offerNumber} offers between {dateDebut} and {dateFin}</div>
       <button type="button" onClick={lastWeek} >Last week</button>
       <button type="button" onClick={nextWeek} >Next week</button>
       <Schedule 
